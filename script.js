@@ -1,4 +1,4 @@
-function monstersCalc() {
+function result() {
     let initialPopulation = prompt('Enter the initial population: ');
     let rateGrowth = prompt('Enter the rate of growth: ');
     let timeHours = prompt('Enter the time in hours: ');
@@ -10,6 +10,6 @@ function monstersCalc() {
 
     let monsterInfos = monsterLocation.concat(' ', monsterName).toUpperCase();
 
-    document.getElementById('monstersCalc').innerHTML = 'After ' + timeHours + ' hours, the population of ' + monsterInfos + ' has increased to ' + finalPopulation + '!';
+    document.getElementById('result').innerHTML = 'After ' + timeHours + ' hours, the population of ' + monsterInfos + ' has increased to ' + finalPopulation + '!';
 }
 
