@@ -1,4 +1,4 @@
-function result() {
+function monsterCalc() {
     let initialPopulation = prompt('Enter the initial population: ');
     let rateGrowth = prompt('Enter the rate of growth: ');
     let timeHours = prompt('Enter the time in hours: ');
