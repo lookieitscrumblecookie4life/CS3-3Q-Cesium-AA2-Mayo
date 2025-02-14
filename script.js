@@ -3,14 +3,13 @@ function monstersCalc() {
     let rateGrowth = prompt('Enter the rate of growth: ');
     let timeHours = prompt('Enter the time in hours: ');
 
-    let s = initialPopulation * Math.pow(Math.E, (rateGrowth * timeHours));
-    let finalPopulation = Math.round(parseFloat(s));
+    let finalPopulation = Math.round(parseFloat(initialPopulation) * Math.pow(Math.E, (parseFloat(rateGrowth) * parseFloat(timeHours))));
 
     let monsterLocation = prompt('Enter the location of the monster: ');
     let monsterName = prompt('Enter the name of the monster: ');
 
-    let monsterInfos = monsterLocation.concat(' ', monsterName);
+    let monsterInfos = monsterLocation.concat(' ', monsterName).toUpperCase();
 
-    document.getElementById('monstersCalc').innerHTML = 'After ' + timeHours + ' hours, the population of ' + monsterInfos.toUpperCase() + ' has increased to ' + finalPopulation + '!';
+    document.getElementById('monstersCalc').innerHTML = 'After ' + timeHours + ' hours, the population of ' + monsterInfos + ' has increased to ' + finalPopulation + '!';
 }
 
